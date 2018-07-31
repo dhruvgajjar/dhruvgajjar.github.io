@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  <link rel="stylesheet" href="https://drewgajjar.github.io/css/projects.css" type="text/css">
+  </head>
+  <body>
+     <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+	<div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://drewgajjar.github.io">About Me</a>
+      <a href="https://drewgajjar.github.io/experience.html">Experience, Education, & Skills</a>
+      <a href="https://drewgajjar.github.io/projects.html">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+    <span style="font-size:30px;top:0;left:0;line-height: 50px;color:white;background-color:black;font-family:'Raleway',sans-serif;font-weight:100;cursor:pointer;position:fixed;z-index: 1;width:100%;" onclick="openNav()">  &#9776; </span>
+    
+    <div class="MainContainer">
+     <div class="ParallaxContainer">
+       <h1>
+         Projects
+       </h1>
+     </div>
+	
+    <div class="ContentContainer">
+     <div class="content">	
+        <div id="top"></div>
+        <section class="gallery">
+            <div class="row">
+                <ul>
+                    <a href="#" class="close"></a>
+                    <li>
+                        <a href="#item01">
+                            <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#item02">
+                            <img src="https://cdn.dribbble.com/users/545884/screenshots/3892302/contact.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- / row -->
+
+            <!-- Item 01 -->
+            <div id="item01" class="port">
+
+                <div class="row">
+                    <div class="description">
+                        <h2>Electromechanical Innocation/Invention</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                    </div>
+                    <div>	
+                        <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+                    </div>
+                </div> 
+
+            </div> <!-- / Item 02 -->
+
+            <!-- Item 02 -->
+            <div id="item02" class="port">
+
+                <div class="row">
+                    <div class="description">
+                        <h2>Item 02</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                    </div>
+                    <img src="https://cdn.dribbble.com/users/545884/screenshots/2883479/cover.jpg" alt="">
+                </div> <!-- / row -->
+
+            </div> <!-- / Item 02 -->
+
+        </section> <!-- / projects -->
+	 </div>
+    </div>
+ 
+    
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script>
+       // portfolio
+     $('.gallery ul li a').click(function() {
+         var itemID = $(this).attr('href');
+         $('.gallery ul').addClass('item_open');
+         $(itemID).addClass('item_open');
+         return false;
+     });
+     $('.close').click(function() {
+         $('.port, .gallery ul').removeClass('item_open');
+         return false;
+     });
+
+     $(".gallery ul li a").click(function() {
+         $('html, body').animate({
+             scrollTop: parseInt($("#top").offset().top)
+         }, 400);
+     });
+     
+     function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+         document.getElementById("main").style.marginLeft = "250px";
+         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+          document.body.style.backgroundColor = "white";
+      }
+  </script>
+  </body>
+</html>
