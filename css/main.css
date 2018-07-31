@@ -1,1 +1,122 @@
+html, body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  letter-spacing: 5px;
+  /*font-family: Open Sans;*/
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  font-size: 8vw;
+  /*font-weight: 400;*/
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: inherit;
+  height: 80vh;
+
+}
+
+.ContentContainer {
+  position: relative;
+  display: black;
+  background-color: white;
+  z-index: 1;
+}
+
+.Content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+p {
+  margin: 75px 0;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(https://drewgajjar.github.io/black-coffee-business-cellphone-860379.jpg);
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 125%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 45px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    font-weight:800;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
 
