@@ -171,6 +171,7 @@
         max-height: 100%;
         padding: 0 40px 40px;
         overflow: auto;
+	overflow-x:hidden;
       }
       .port h1 {
         font-size: 35px;
