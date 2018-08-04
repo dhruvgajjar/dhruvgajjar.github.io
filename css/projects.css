@@ -28,7 +28,7 @@
       .row {
         width: 100%;
         max-width: 1170px;
-        margin: 0 auto;
+        margin: 40px auto;
         padding: 0;
         clear: both;
       }
@@ -86,12 +86,12 @@
       }
 
       .gallery {
-        padding: 0px 0 300px;
+        padding: 30px 0 300px;
         position: relative;
         overflow: hidden;
       }
       .gallery ul {
-        padding-top: 0px;
+        padding-top: 50px;
         position: relative;
       }
       .gallery ul li {
@@ -236,7 +236,7 @@
 
     .Content {
       max-width: 750px;
-      margin:0px auto;
+      margin:100px auto;
       padding: 30px 0;
     }
     .ParallaxContainer {
