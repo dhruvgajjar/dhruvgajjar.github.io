@@ -4,6 +4,7 @@ html, body {
   line-height: 28px;
   margin: 0;
   padding: 0;
+  background: white;
 }
 
 
@@ -11,6 +12,7 @@ h1 {
   letter-spacing: 3px;
   font-family: 'Raleway', sans-serif;
   color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-align: center;
   font-size: 8vw;
   
@@ -26,7 +28,7 @@ h1 {
 .ContentContainer {
   position: relative;
   display: black;
-  background-color: white;
+  background: white;
   z-index: 1;
 }
 
@@ -41,6 +43,7 @@ h1 {
 p {
   margin: 50px 0;
   text-indent: 5vw;
+  font-weight:400;
 }
 
 .ParallaxContainer {
@@ -53,7 +56,7 @@ p {
   justify-content: center;
   align-items: center;
   transform: translateZ(-1px) scale(2);
-  background: url(https://dhruvgajjar.github.io/images/20171122_150243_HDR.jpg);
+  background: url(https://dhruvgajjar.github.io/images/black-coffee-business-cellphone-860379.jpg);
   height: 150%; 
 
   /* Create the parallax scrolling effect */
@@ -117,7 +120,3 @@ p {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
