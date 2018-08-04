@@ -12,9 +12,9 @@ h1 {
   letter-spacing: 3px;
   font-family: 'Raleway', sans-serif;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
   text-align: center;
-  font-size: 8vw;
+  font-size: 10vw;
   
 }
 
@@ -52,18 +52,20 @@ p {
   flex: 1 0 auto;
   position: relative;
   z-index: -1;
-  height: 100vh;
+  height: 125vh;
   justify-content: center;
   align-items: center;
   transform: translateZ(-1px) scale(2);
-  background: url(https://dhruvgajjar.github.io/images/black-coffee-business-cellphone-860379.jpg);
-  height: 150%; 
+  background: url(https://dhruvgajjar.github.io/images/apple-background-clean-399160.jpg);
+  /*height: 150%;*/ 
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+   /* Create the parallax scrolling effect */
+  
   background-size: cover;
+  background-attachment: fixed;
+   background-position: center;
+ 	 background-repeat: no-repeat;
+  
 }
 
 /* The side navigation menu */
