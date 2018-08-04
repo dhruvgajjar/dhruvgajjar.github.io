@@ -246,13 +246,13 @@
         flex: 1 0 auto;
         position: relative;
         z-index: -1;
-        height:100vh;
+        
         margin-top:0px auto; 
         justify-content: center;
         align-items: center;
         transform: translateZ(-1px) scale(2);
         height: 125vh;
-        max-width:110%;
+        
         background-attachment: fixed;
         background-size: cover;
         background-position:center;
