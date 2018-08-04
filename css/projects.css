@@ -86,12 +86,12 @@
       }
 
       .gallery {
-        padding: 40px 0 300px;
+        padding: 0px 0 300px;
         position: relative;
         overflow: hidden;
       }
       .gallery ul {
-        padding-top: 50px;
+        padding-top: 0px;
         position: relative;
       }
       .gallery ul li {
@@ -229,7 +229,7 @@
     .ContentContainer {
       position: reltive;
       display: black;
- 	  margin-top:100px;
+ 	  margin-top:0px;
       background-color: white;
       z-index: 1;
     }
