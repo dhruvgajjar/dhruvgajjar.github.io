@@ -1,3 +1,7 @@
+html,body{
+  background: linear-gradient(#96beff, white);
+}
+
 
 .timeline-small {
   max-width: 75vw;
