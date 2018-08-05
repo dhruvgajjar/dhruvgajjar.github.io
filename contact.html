@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact Me</title>
+    <link rel="shortcut icon" href="Website logo.png" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://drewgajjar.github.io/css/contact.css">
+  </head>
+<body>  
+  <div id="form-main">
+    <div id="form-div">      
+        <form class="form" id="form1" action="https://dhruvgajjar.github.io/contact.php" method="POST">
+
+        <p class="name">	
+          <input id="name" type="text" name="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input">
+        </p>
+
+        <p class="email">
+          <input id="email" type="text" name="email" class="validate[required,custom[email]] feedback-input" id="email">
+        </p>
+
+        <p>
+          <input id="phone" type="number" name="phone" class="validate[required,custom[number]] feedback-input">
+        </p>
+
+        <p class="text">
+        <textarea class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment" name="message" rows="6" cols="25"></textarea><br />
+        </p>
+
+        <div class="submit">
+        <input type="submit" value="SEND" style="font-family: 'Montserrat', Arial, Helvetica, sans-serif;float:left;width: 100%;border: #fbfbfb solid 4px;cursor:pointer;background-color: #3498db;color:white;font-size:24px;padding-top:22px;padding-bottom:22px;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;margin-top:-4px;font-weight:700;" />
+        <div class="ease"></div>
+        </div>
+        </form>
+    </div>
+  </div>
+</body>
+<?php
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
+$formcontent=" From: $name \n Phone: $phone \n Call Back: $call \n Website: $website \n Priority: $priority \n Type: $type \n Message: $message";
+$recipient = "contactme@dhruvgajjar.com";
+$subject = "Contact Form";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "Thank You!";
+?>
+</html>
