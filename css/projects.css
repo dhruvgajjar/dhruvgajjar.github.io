@@ -149,7 +149,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        padding-top: 100px;
+        padding-bottom: 100px;
         background: #ffffff;
         background-color: white;
         z-index: 103;
@@ -388,6 +388,7 @@ img {vertical-align: middle;}
 .file-button-container
 {
   text-align:center;
+  padding-bottom:50px;
 }
 .file-download
 {
@@ -455,6 +456,7 @@ file-download:after{
   margin:0px 10px 0px 0px;
   padding: 0px;
   height: 20px;
+  width:auto;
 }
 
 
