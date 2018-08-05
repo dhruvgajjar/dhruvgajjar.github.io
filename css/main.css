@@ -76,7 +76,7 @@ p {
     z-index: 2; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: white; 
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 45px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -90,7 +90,7 @@ p {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-style:italic;
-    color: #818181;
+    color: black;
     display: block;
     transition: 0.3s;
 }
