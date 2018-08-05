@@ -330,7 +330,7 @@ img {
   flex: 1 0 auto;
   position: relative;
   z-index: -1;
-  height: 125vh;
+  height: 110vh;
   justify-content: center;
   align-items: center;
   transform: translateZ(-1px) scale(2);
