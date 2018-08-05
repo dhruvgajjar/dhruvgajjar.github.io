@@ -460,4 +460,79 @@ file-download:after{
 }
 
 
+/*pdf download*/
+.adobe-download-button-container
+{
+  text-align:center;
+  padding-bottom:50px;
+}
+.adobe-pdf-download
+{
+  border:2px solid #de4533;
+  background:white;
+  color: #de4533;
+  text-transform:uppercase;
+  font-size:0.8em;
+  padding:0px 20px 0px 20px;
+  transition: background 0.5s,color 0.5s;
+  
+}
+file-download:after{
+  filter:blur(10px);
+  
+}
+.adobe-pdf-download a
+{
+  text-decoration:none;
+  color: #de4533;
+  transition: background 0.5s,color 0.5s;
+  font-family:arial;
+  font-weight:bold;
+}
+.adobe-pdf-download a:hover
+{
+  color:white;
+  transition: background 0.5s,color 0.5s;
+}
+.adobe-pdf-download:hover a
+{
+  color:white;
+  transition: background 0.5s,color 0.5s;
+}
+.adobe-pdf-download:hover
+{
+  background:#de4533;
+  color:white;
+  transition: background 0.5s,color 0.5s;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.adobe-pdf-download img
+{
+  margin:0px 10px 0px 0px;
+  padding: 0px;
+  height: 20px;
+  width:auto;
+}
+
 
