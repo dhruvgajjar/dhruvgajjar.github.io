@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="https://dhruvgajjar.github.io/css/experience.css">
   </head>
   
-  <body>
+ <body>   
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="https://dhruvgajjar.github.io">About Me</a>
@@ -18,9 +18,19 @@
       <a href="https://dhruvgajjar.github.io/projects.html">Projects</a>
       <a href="https://dhruvgajjar.github.io/contact.html">Contact Me</a>
     </div>
-    <span style="font-size:30px;top:0;padding-left:0.5em;left:0;line-height: 50px;color:black;background-color:transparent;font-family:'Raleway',sans-serif;font-weight:100;cursor:pointer;position:fixed;z-index: 1;width:100%;" onclick="openNav()">  &#9776;</span>
-		    
-	  <div class="adobe-download-button-container">
+   <span style="font-size:30px;padding-left:0.5em;font-weight:800;top:0;line-height: 50px;color:black;background-color:transparent;font-family:'Raleway',sans-serif;cursor:pointer;position:fixed;z-index: 1;width:100%;" onclick="openNav()">  &#9776;</span>
+   
+   <div class="MainContainer">
+     <div class="ParallaxContainer">
+       <h1 style="font-weight:bold;font-style:italic;">
+         Experience
+       </h1>
+     </div>
+
+     <div class="ContentContainer">
+       <div class="Content">
+         
+         <div class="adobe-download-button-container">
 	      <button class="adobe-pdf-download">
 	      <table>
 		  <tr>
@@ -157,20 +167,26 @@
             </ul>
         </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script>
-       function openNav() {
-           document.getElementById("mySidenav").style.width = "250px";
-           document.getElementById("main").style.marginLeft = "250px";
-           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
-
-        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            document.body.style.backgroundColor = "white";
-        }      
-    </script>
-  </body>
+         
+         
+        </div>
+     </div>
+   </div>
+   
+   <script>
+      function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+         document.getElementById("main").style.marginLeft = "250px";
+         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+          document.body.style.backgroundColor = "white";
+      }
+      
+   </script>
+   
+</body>
 </html>
