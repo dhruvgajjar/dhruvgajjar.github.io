@@ -1,53 +1,72 @@
-body {
-  color: #1a1a1a;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.6em;
+html, body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+
+h1 {
+  letter-spacing: 3px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  
   text-align: center;
-  background: #bc4e9c;
-  background: -webkit-linear-gradient(to right, #0cbaff, #bc4e9c);
-  background: linear-gradient(to right, #f80759, #0cbaff);
+  font-size: 10vw;
+  
 }
 
-#content {
-  border-radius: 8px;
-  padding: 14px 7px;
-  background: #fff;
-  max-width: 25em;
-  margin: 3em 38% 0em auto;
-  box-shadow: 0 2px 3px rgba(71, 71, 71, 0.3);
+.MainContainer {
+  perspective: 1px;
+  transform-style: inherit;
+  height: 80vh;
+
 }
 
-h2 {
-  margin: 0;
-  /*text-transform: uppercase;*/
-  letter-spacing: -0.03em;
+.ContentContainer {
+  position: relative;
+  display: black;
+  background: white;
+  z-index: 1;
 }
 
-a {
-  color: #bc4e9c;
-  font-weight: 900 !important;
-  text-decoration: none;
+.Content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-family:"Raleway",sans-serif;
+  font-weight:300;
 }
 
-.contact-info {
-  padding: 0.6em 0;  
-}
-.row {
-  width: 100%;
-  max-width: 1170px;
-  margin: 40px auto;
-  padding: 0;
-  clear: both;
+p {
+  margin: 50px 0;
+  text-indent: 5vw;
+  font-weight:400;
 }
 
-.row img {
-  max-width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-}
+.ParallaxContainer {
+  display: flex;
+  
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 125vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(https://dhruvgajjar.github.io/images/apple-background-clean-399160.jpg);
+  /*height: 150%;*/ 
 
+   /* Create the parallax scrolling effect */
+  
+  background-size: cover;
+  background-attachment: fixed;
+   background-position: center;
+ 	 background-repeat: no-repeat;
+  
+}
 
 /* The side navigation menu */
 .sidenav {
@@ -104,3 +123,48 @@ a {
     .sidenav a {font-size: 18px;}
 }
 
+
+   #content1 {
+  border-radius: 8px;
+  padding: 14px 7px;
+  background: #f9f9f9;
+  max-width: 25em;
+  margin: 3em 8em 0em auto;
+  box-shadow: 0 2px 3px rgba(71, 71, 71, 0.3);
+}
+
+h2 {
+  padding-left: 7em;
+  /*text-transform: uppercase;*/
+  letter-spacing: -0.03em;
+
+}
+
+a {
+  color: #bc4e9c;
+  font-weight: 900 !important;
+  text-decoration: none;
+}
+
+.contact-info {
+  padding: 0.6em 0;  
+}
+.row {
+  width: 100%;
+  max-width: 1170px;
+  margin: 40px auto;
+  padding: 0;
+  clear: both;
+}
+
+.row img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.linkedin a i:hover{
+  font-size:20em;
+  background-color:black;
+}
