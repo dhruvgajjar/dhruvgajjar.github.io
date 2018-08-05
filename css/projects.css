@@ -382,3 +382,80 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+/*folder download*/
+.file-button-container
+{
+  text-align:center;
+}
+.file-download
+{
+  border:2px solid #3d87ff;
+  background:white;
+  color: #3d87ff;
+  text-transform:uppercase;
+  font-size:0.8em;
+  padding:0px 20px 0px 20px;
+  transition: background 0.5s,color 0.5s;
+  
+}
+file-download:after{
+  filter:blur(10px);
+  
+}
+.file-download a
+{
+  text-decoration:none;
+  color: #3d87ff;
+  transition: background 0.5s,color 0.5s;
+  font-family:arial;
+  font-weight:bold;
+}
+.file-download a:hover
+{
+  color:white;
+  transition: background 0.5s,color 0.5s;
+}
+.file-download:hover a
+{
+  color:white;
+  transition: background 0.5s,color 0.5s;
+}
+.file-download:hover
+{
+  background:#3d87ff;
+  color:white;
+  transition: background 0.5s,color 0.5s;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.file-download img
+{
+  margin:0px 10px 0px 0px;
+  padding: 0px;
+  height: 20px;
+}
+
+
+
