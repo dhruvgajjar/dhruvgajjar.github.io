@@ -57,6 +57,7 @@
         text-transform: uppercase;
         font-size: 8.5vw;
         font-weight: bold;
+	text-shadow:-3px 4px 12px rgba(0,0,0,0.4);
 	font-style:italic;
         letter-spacing: 3px;
         line-height: 0.8;
