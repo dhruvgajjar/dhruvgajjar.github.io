@@ -52,7 +52,7 @@ p {
   flex: 1 0 auto;
   position: relative;
   z-index: -1;
-  height: 135vh;
+  height: 125vh;
   justify-content: center;
   align-items: center;
   transform: translateZ(-1px) scale(2);
